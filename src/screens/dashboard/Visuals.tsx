@@ -4,7 +4,6 @@ import Animated, { interpolate, useAnimatedStyle } from 'react-native-reanimated
 import LinearGradient from 'react-native-linear-gradient';
 import { darkWeatherColors } from '@utils/Constants';
 import { screenHeight, screenWidth } from '@utils/Scaling';
-import LottieView from 'lottie-react-native';
 import { useCollapsibleContext } from '@r0b0t3d/react-native-collapsible';
 
 const Visuals: FC = () => {
@@ -20,13 +19,6 @@ const Visuals: FC = () => {
       <Image
         source={require('@assets/images/cloud.png')}
         style={styles.cloud}
-      />
-      <LottieView
-        autoPlay={true}
-        enableMergePathsAndroidForKitKatAndAbove={true}
-        loop={true}
-        style={styles.lottie}
-        source={require('@assets/animations/raining.json')}
       />
     </Animated.View>
   );
